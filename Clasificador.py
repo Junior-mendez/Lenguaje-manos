@@ -1,12 +1,7 @@
-#------------------------------- Importamos librerias ---------------------------------
-import cv2
-import os
-
 #---------------------------------Importamos las fotos tomadas-----------------------------
-import tensorflow.python.keras.optimizers
 from tensorflow.python.keras import optimizers         #Optimizador con el que vamos a entrenar el modelo
 from tensorflow.python.keras.models import Sequential  #Nos permite hacer redes neuronales secuenciales
-from tensorflow.python.keras.layers import Dropout, Flatten, Dense, Activation #
+from tensorflow.python.keras.layers import Dropout, Flatten, Dense
 from tensorflow.python.keras.layers import Convolution2D, MaxPooling2D  #Capas para hacer las convoluciones
 from tensorflow.python.keras import backend as K       #Si hay una sesion de keras, lo cerramos para tener todo limpio
 from keras.preprocessing.image import ImageDataGenerator
