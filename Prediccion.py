@@ -64,6 +64,10 @@ while (1):
                     print(vector,resultado)
                     cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 3)
                     cv2.putText(frame, '{}'.format(dire_img[0]), (x1, y1 - 5), 1, 1.3, (0, 255, 0), 1, cv2.LINE_AA)
+                if respuesta == 1:
+                    print(vector,resultado)
+                    cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 3)
+                    cv2.putText(frame, '{}'.format(dire_img[1]), (x1, y1 - 5), 1, 1.3, (0, 255, 0), 1, cv2.LINE_AA)
                 else:
                     cv2.putText(frame, 'Letra Desconocida',(x1,y1-5),1,1.3,(0,255,255),1,cv2.LINE_AA)
 
