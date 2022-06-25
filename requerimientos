@@ -1,0 +1,14 @@
+install cv2
+pip install opencv-python
+
+install mediapipe
+pip install mediapipe
+
+Solucionar problema mediapipe
+pip3 install --upgrade protobuf==3.20.0
+
+Versión python
+Python 3.9.7
+
+install tensorflow
+pip install tensorflow
