@@ -3,11 +3,11 @@ import mediapipe as mp
 import os
 
 #Creamos la carpeta donde almacenaremos el entrenamiento , modificar por letra a entrenar.
-nombre='Letra_A'
+nombre='Letra_U'
 #carga imagenes en carpeta de Entrenamiento
-direccion='C:/Developer/upn/Lenguaje/Entrenamiento'
+# direccion='C:/Developer/upn/Lenguaje/Entrenamiento'
 #carga imagenes en carpeta de Validacion
-# direccion='C:/Developer/upn/Lenguaje/Validacion'
+direccion='C:/Developer/upn/Lenguaje/Validacion'
 carpeta= direccion+'/'+nombre
 
 if not os.path.exists(carpeta):

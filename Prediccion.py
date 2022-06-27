@@ -6,7 +6,7 @@ from keras_preprocessing.image import  img_to_array
 from keras.models import load_model
 
 modelo = 'C:/Developer/upn/Lenguaje/ModeloLetras.h5'
-peso =  'C:/Developer/upn/Lenguaje/pesosLetras.h5'
+peso =  'C:/Developer/upn/Lenguaje/PesosLetras.h5'
 cnn = load_model(modelo)  #Cargamos el modelo
 cnn.load_weights(peso)  #Cargamos los pesos
 
@@ -64,13 +64,24 @@ while (1):
                     print(vector,resultado)
                     cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 3)
                     cv2.putText(frame, '{}'.format(dire_img[0]), (x1, y1 - 5), 1, 1.3, (0, 255, 0), 1, cv2.LINE_AA)
-                if respuesta == 1:
+                elif respuesta == 1:
                     print(vector,resultado)
                     cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 3)
                     cv2.putText(frame, '{}'.format(dire_img[1]), (x1, y1 - 5), 1, 1.3, (0, 255, 0), 1, cv2.LINE_AA)
+                elif respuesta == 2:
+                    print(vector,resultado)
+                    cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 3)
+                    cv2.putText(frame, '{}'.format(dire_img[2]), (x1, y1 - 5), 1, 1.3, (0, 255, 0), 1, cv2.LINE_AA)
+                elif respuesta == 3:
+                    print(vector,resultado)
+                    cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 3)
+                    cv2.putText(frame, '{}'.format(dire_img[3]), (x1, y1 - 5), 1, 1.3, (0, 255, 0), 1, cv2.LINE_AA)
+                elif respuesta == 4:
+                    print(vector,resultado)
+                    cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 3)
+                    cv2.putText(frame, '{}'.format(dire_img[4]), (x1, y1 - 5), 1, 1.3, (0, 255, 0), 1, cv2.LINE_AA)
                 else:
-                    cv2.putText(frame, 'Letra Desconocida',(x1,y1-5),1,1.3,(0,255,255),1,cv2.LINE_AA)
-
+                    cv2.putText(frame, 'Letra Desconocida', (x1, y1 - 5), 1, 1.3, (0, 255, 0), 1, cv2.LINE_AA)
     cv2.imshow("Video",frame)
     k = cv2.waitKey(1)
     if k == 27:

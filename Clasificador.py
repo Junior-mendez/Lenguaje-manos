@@ -23,7 +23,7 @@ tam_filtro1 = (4,4)
 tam_filtro2 = (3,3)
 tam_filtro3 = (2,2)   #Tamaños de los filtros 1 y 2
 tam_pool = (2,2)  #Tamaño del filtro en max pooling
-clases = 1  #5 letras - Cambiar si se agrega más letras
+clases = 5  #5 letras - Cambiar si se agrega más letras
 lr = 0.0005  #ajustes de la red neuronal para acercarse a una solucion optima
 
 #Pre-Procesamiento de las imagenes
@@ -84,6 +84,6 @@ cnn.fit(imagen_entreno, steps_per_epoch=pasos, epochs= iteraciones, validation_d
 
 #Guardamos el modelo
 cnn.save('ModeloLetras.h5')
-cnn.save_weights('pesosLetras.h5')
+cnn.save_weights('PesosLetras.h5')
 
 
